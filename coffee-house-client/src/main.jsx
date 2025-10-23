@@ -9,39 +9,63 @@ import AddCoffe from "./pages/AddCoffe.jsx";
 import UpdateCoffe from "./pages/UpdateCoffe.jsx";
 import CoffeDeatils from "./pages/CoffeDeatils.jsx";
 import ErrorPage from "./pages/ErrorPage.jsx";
+import AuthProvider from "./context/AuthProvider.jsx";
+import Register from "./components/log-in-out-register/Register.jsx";
+import LogIn from "./components/log-in-out-register/LogIn.jsx";
+import UserAuth from "./pages/UserAuth.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    Component:HomeLayout,
-    errorElement:<ErrorPage></ErrorPage>,
-    children:[
+    Component: HomeLayout,
+    errorElement: <ErrorPage></ErrorPage>,
+    children: [
       {
-        index:true,
-        loader:()=> fetch('http://localhost:3000/coffees'),
-        Component:Home,
-        HydrateFallback:ErrorPage,
+        index: true,
+        loader: () => fetch("http://localhost:3000/coffees"),
+        Component: Home,
+        // HydrateFallback: ErrorPage,
       },
       {
-        path:"/add-coffe",
-        Component:AddCoffe,
+        path: "/add-coffe",
+        Component: AddCoffe,
       },
       {
-        path:"/update-coffe/:id",
-        loader:({params})=>fetch(`http://localhost:3000/coffe-details/${params.id}`),
+        path: "/update-coffe/:id",
+        loader: ({ params }) =>
+          fetch(`http://localhost:3000/coffe-details/${params.id}`),
         Component: UpdateCoffe,
       },
       {
-        path:"/coffe-details/:id",
-        loader:({params})=>fetch(`http://localhost:3000/coffe-details/${params.id}`),
-        Component:CoffeDeatils,
-      }
-    ]
+        path: "/coffe-details/:id",
+        loader: ({ params }) =>
+          fetch(`http://localhost:3000/coffe-details/${params.id}`),
+        Component: CoffeDeatils,
+      },
+    ],
+  },
+  {
+    path: "/user",
+    Component: UserAuth,
+    errorElement: <ErrorPage></ErrorPage>,
+    children: [
+      {
+        index:true,
+        path:"/user/register",
+        Component: Register,
+      },
+      {
+        path: "/user/login",
+        Component: LogIn,
+      },
+    ],
   },
 ]);
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router} />,
+    <AuthProvider>
+      <RouterProvider router={router} />,
+    </AuthProvider>
   </StrictMode>
 );

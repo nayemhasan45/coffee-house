@@ -9,7 +9,7 @@ import InstagramGallery from "../components/InstagramGallery";
 const Home = () => {
   const initialCoffees = useLoaderData();
   const [coffees,setCoffees]=useState(initialCoffees);
-  // console.log(coffees);
+  // console.log(coffees);  
   const handleDeleteParent =(id)=>{
     setCoffees(coffees.filter(coffee=>coffee._id!==id));
   }
