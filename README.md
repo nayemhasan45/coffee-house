@@ -1,43 +1,40 @@
-☕ Coffee Store App
+# ☕ Coffee Store App
 
-A full-stack Coffee Store web application built using React, Tailwind CSS, DaisyUI, Firebase Authentication, and MongoDB.
+A full-stack Coffee Store web application built using **React**, **Tailwind CSS**, **DaisyUI**, **Firebase Authentication**, and **MongoDB**.
 
-📍 Live Demo: https://coffee-house-3c4a2.web.app/
+🔗 **Live Demo:** [Click here to view](https://coffee-house-3c4a2.web.app/)  
+⚠️ *This is a practice project as I am still learning full-stack development.*
 
-⚠️ This is a practice project as I am still learning full-stack development.
+---
 
-🚀 Features
+## 🚀 Features
 
-User authentication (Firebase)
+✅ User authentication (Firebase)  
+✅ Add, update, delete coffees (CRUD with MongoDB)  
+✅ Responsive UI using Tailwind CSS + DaisyUI  
+✅ Dynamic product listing  
+✅ React Router integration  
+✅ Modern glassmorphic UI design  
 
-Add, update, delete coffees (CRUD with MongoDB)
+---
 
-Responsive UI using Tailwind CSS + DaisyUI
+## 📚 What I Practiced
 
-Product listing and dynamic rendering
+- Firebase authentication integration  
+- CRUD operations with MongoDB  
+- React hooks and context API  
+- Responsive UI development with Tailwind CSS  
+- Component-based architecture  
 
-React Router navigation
+---
 
-Modern glassmorphic design elements
+## 📌 Project Status
 
+✔️ Completed as a learning project  
+📈 Open to future improvements  
 
-📚 What I Practiced
+---
 
-Firebase authentication integration
+## 💬 Feedback
 
-CRUD with MongoDB
-
-Working with React hooks and context
-
-Responsive UI design with Tailwind
-
-Component-based architecture
-
-📌 Status
-
-✅ Completed as a learning project
-📈 Open to future improvements
-
-📨 Feedback
-
-As I’m still learning, constructive feedback and suggestions are welcome.
+As I’m still learning, constructive feedback and suggestions are always welcome!
