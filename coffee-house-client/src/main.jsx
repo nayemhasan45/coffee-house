@@ -22,7 +22,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        loader: () => fetch("http://localhost:3000/coffees"),
+        loader: () => fetch("https://coffee-house-server-rho.vercel.app/coffees"),
         Component: Home,
         // HydrateFallback: ErrorPage,
       },
@@ -33,13 +33,13 @@ const router = createBrowserRouter([
       {
         path: "/update-coffe/:id",
         loader: ({ params }) =>
-          fetch(`http://localhost:3000/coffe-details/${params.id}`),
+          fetch(`https://coffee-house-server-rho.vercel.app/coffe-details/${params.id}`),
         Component: UpdateCoffe,
       },
       {
         path: "/coffe-details/:id",
         loader: ({ params }) =>
-          fetch(`http://localhost:3000/coffe-details/${params.id}`),
+          fetch(`https://coffee-house-server-rho.vercel.app/coffe-details/${params.id}`),
         Component: CoffeDeatils,
       },
     ],

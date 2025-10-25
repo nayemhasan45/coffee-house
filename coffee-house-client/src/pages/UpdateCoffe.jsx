@@ -25,7 +25,7 @@ const UpdateCoffe = () => {
       /* Read more about isConfirmed, isDenied below */
       if (result.isConfirmed) {
         
-        fetch(`http://localhost:3000/coffees/${_id}`, {
+        fetch(`https://coffee-house-server-rho.vercel.app/coffees/${_id}`, {
           method: "PUT",
           headers: {
             "Content-Type": "application/json",

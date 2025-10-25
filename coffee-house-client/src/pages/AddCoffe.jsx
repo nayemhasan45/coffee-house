@@ -12,7 +12,7 @@ const AddCoffe = () => {
     const coffeeData = Object.fromEntries(fromData.entries());
     console.log(coffeeData);
     // send data to server
-    fetch("http://localhost:3000/add-coffe", {
+    fetch("https://coffee-house-server-rho.vercel.app/add-coffe", {
       method: "POST",
       headers: {
         "content-type": "application/json",

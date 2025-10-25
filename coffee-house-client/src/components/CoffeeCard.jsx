@@ -10,7 +10,7 @@ const CoffeeCard = ({ coffee, handleDeleteParent }) => {
   // handle delete form db
   const handleDelete = (id) => {
     // console.log("clicked", id);
-    // fetch(`http://localhost:3000/coffees`)
+    // fetch(`https://coffee-house-server-rho.vercel.app/coffees`)
     Swal.fire({
       title: "Are you sure?",
       text: "You won't be able to revert this!",
@@ -21,7 +21,7 @@ const CoffeeCard = ({ coffee, handleDeleteParent }) => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:3000/coffees/${id}`, {
+        fetch(`https://coffee-house-server-rho.vercel.app/coffees/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())
