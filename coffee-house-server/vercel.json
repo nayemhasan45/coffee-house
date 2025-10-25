@@ -11,9 +11,5 @@
       "src": "/(.*)",
       "dest": "index.js"
     }
-  ],
-  "env": {
-    "COFFE_DB": "@coffe_db",
-    "COFFE_PASS": "@coffe_pass"
-  }
+  ]
 }
