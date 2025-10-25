@@ -3,6 +3,7 @@
 A full-stack Coffee Store web application built using React, Tailwind CSS, DaisyUI, Firebase Authentication, and MongoDB (via Vercel Serverless Functions).
 
 🔗 **Live Demo:** [Click here to view](https://coffee-house-3c4a2.web.app/)
+
 ⚠️ This is a learning/practice project as I continue exploring full-stack development.
 
 🚀 Features
