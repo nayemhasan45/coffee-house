@@ -1,40 +1,36 @@
-# ☕ Coffee Store App
+☕ Coffee Store App
 
-A full-stack Coffee Store web application built using **React**, **Tailwind CSS**, **DaisyUI**, **Firebase Authentication**, and **MongoDB**.
+A full-stack Coffee Store web application built using React, Tailwind CSS, DaisyUI, Firebase Authentication, and MongoDB (via Vercel Serverless Functions).
 
-🔗 **Live Demo:** [Click here to view](https://coffee-house-3c4a2.web.app/)  
-⚠️ *This is a practice project as I am still learning full-stack development.*
+🔗 **Live Demo:** [Click here to view](https://coffee-house-3c4a2.web.app/)
 
----
+⚠️ This is a learning/practice project as I continue exploring full-stack development.
 
-## 🚀 Features
+🚀 Features
 
-✅ User authentication (Firebase)  
-✅ Add, update, delete coffees (CRUD with MongoDB)  
-✅ Responsive UI using Tailwind CSS + DaisyUI  
-✅ Dynamic product listing  
-✅ React Router integration  
-✅ Modern glassmorphic UI design  
+✅ User authentication with Firebase
+✅ Full CRUD operations (Create, Read, Update, Delete) on MongoDB
+✅ Serverless backend powered by Vercel
+✅ Responsive UI with Tailwind CSS & DaisyUI
+✅ Product listing and dynamic rendering
+✅ React Router for seamless navigation
+✅ Clean and modern glassmorphic UI
 
----
+📚 What I Learned / Practiced
 
-## 📚 What I Practiced
+📌 Setting up a backend server using Vercel Serverless Functions
+📌 Working with MongoDB for CRUD operations
+📌 Firebase Authentication (user registration & login)
+📌 Managing state with React Hooks
+📌 Structuring a client-server full-stack application
+📌 Building responsive UI using Tailwind CSS and DaisyUI
 
-- Firebase authentication integration  
-- CRUD operations with MongoDB  
-- React hooks and context API  
-- Responsive UI development with Tailwind CSS  
-- Component-based architecture  
+📌 Current Status
 
----
+✔️ Completed as part of my full-stack learning journey
+🚧 Open to future improvements (e.g., filtering, pagination, dashboard, etc.)
 
-## 📌 Project Status
+💬 Feedback Welcome!
 
-✔️ Completed as a learning project  
-📈 Open to future improvements  
-
----
-
-## 💬 Feedback
-
-As I’m still learning, constructive feedback and suggestions are always welcome!
+I’m continuously improving my full-stack development skills.
+Any constructive feedback, ideas, or suggestions are highly appreciated! 🙌
